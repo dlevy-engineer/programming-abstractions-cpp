@@ -6,7 +6,6 @@ two up to an exponent limit entered by the user.
 */
 
 #include <iostream>
-using namespace std;
 
 /* Function prototypes */
 
@@ -18,12 +17,12 @@ int main() {
 
     int limit;
 
-    cout << "Thsi program lists powers of two." << endl;
-    cout << "Enter exponent limit: ";
-    cin >> limit;
+    std::cout << "Thsi program lists powers of two." << std::endl;
+    std::cout << "Enter exponent limit: ";
+    std::cin >> limit;
 
     for (int i = 0; i <= limit; i++) {
-        cout << "2 to the " << i << " = " << raiseToPower(2, i) << endl;
+        std::cout << "2 to the " << i << " = " << raiseToPower(2, i) << std::endl;
     }
 
     return 0;
